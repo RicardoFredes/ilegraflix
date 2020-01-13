@@ -1,0 +1,13 @@
+<section class="TextCenter Section">
+  <div class="Container">
+    <img id="logo" src="assets/logo.png" />
+    <div class="Message ColorError" *ngIf="loginHasError">
+      Não foi possível entrar: o seu e-mail ou a sua senha então errados. Tente novamente.
+    </div>
+    <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+      <input class="Input" type="email" [(ngModel)]="model.email" name="email" placeholder="email" required />
+      <input class="Input" type="password" [(ngModel)]="model.password" name="password" placeholder="senha" required />
+      <button class="Button ButtonPrimary ButtonFull" type="submit" [disabled]="!userForm.form.valid">Entrar</button>
+    </form>
+  </div>
+</section>

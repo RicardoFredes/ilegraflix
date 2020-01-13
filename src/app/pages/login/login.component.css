@@ -1,0 +1,17 @@
+#logo {
+  height: 48px;
+  margin: 32px 0;
+}
+.Button {
+  margin-top: 32px;
+}
+.Container {
+  width: 320px;
+  max-width: 100%;
+  margin: auto;
+}
+.Message {
+  font-size: 11px;
+  margin-bottom: 32px;
+  line-height: 1.5em;
+}

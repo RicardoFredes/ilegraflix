@@ -1,0 +1,147 @@
+/*
+** Reset
+*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+** Flexbox
+*/
+.Flex {
+  display: flex;
+}
+.JCCenter {
+  justify-content: center;
+}
+.JCSpaceBetween {
+  justify-content: space-between;
+}
+.AICenter {
+  align-items: center;
+}
+
+/*
+** Texts
+*/
+.TextCenter {
+  text-align: center;
+}
+
+/*
+** Forms
+*/
+.Input {
+  appearance: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  display: block;
+  padding: 12px;
+  font-size: 13px;
+  color: #333333;
+  width: 100%;
+  margin: 12px 0;
+  height: 40px;
+  position: relative;
+  transition: all ease 0.2s;
+}
+.Input::placeholder {
+  color: #999999;
+}
+.Input:focus {
+  border-bottom-color: #DB202C;
+  outline: none;
+}
+/*
+** Buttons
+*/
+.Button {
+  text-transform: uppercase;
+  color: white;
+  appearance: none;
+  border: none;
+  background-color: #DB202C;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  text-align: center;
+  min-width: 120px;
+  height: 40px;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+.Button:hover,
+.Button:active {
+  background-color: #bd131e;
+}
+.Button:disabled {
+  opacity: 0.5;
+}
+.Button.ButtonFull {
+  width: 100%;
+  display: block;
+}
+
+/*
+** Layout
+*/
+.Section {
+  padding: 24px;
+}
+@media (min-width: "450px") {
+  .Section {
+    padding: 32px;
+  }
+}
+@media (min-width: "960px") {
+  .Section {
+    padding: 64px calc(50vw - 320px);
+  }
+}
+.Container {
+  width: 940px;
+  max-width: 100%;
+  margin: auto;
+}
+
+/*
+** Colors
+*/
+body,
+.BGGrey {
+  background-color: #f1f1f1;
+}
+
+.ColorError {
+  color: #DB202C;
+}
+

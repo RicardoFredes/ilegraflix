@@ -1,0 +1,15 @@
+<nav>
+  <div class="Flex JCSpaceBetween AICenter Container">
+    <a routerLink="/" id="brand">
+      <img height="40" src="assets/logo-min.png" />
+    </a>
+    <div *ngIf="user" class="Thumbnail">
+      <img height="40" width="40" src="assets/{{user.thumbnail}}" (click)="openFloatMenu=!openFloatMenu" />
+      <div *ngIf="openFloatMenu" class="OptionsFloat">
+        <a routerLink="/perfil">Perfil</a>
+        <a (click)="logout()">Sair</a>
+      </div>
+      <div [class.active]="openFloatMenu" class="Outside" (click)="openFloatMenu=false"></div>
+    </div>
+  </div>
+</nav>
