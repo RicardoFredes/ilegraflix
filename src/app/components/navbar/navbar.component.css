@@ -10,7 +10,7 @@ nav > div {
 #brand {
   padding-top: 4px;
 }
-.GoBack {
+.Link {
   color: white;
   text-transform: uppercase;
   font-weight: bold;
@@ -20,11 +20,11 @@ nav > div {
   line-height: 64px;
   transition: all ease 0.2s;
 }
-.GoBack img {
+.Link img {
   margin-right: 8px;
 }
-.GoBack:hover,
-.GoBack:active {
+.Link:hover,
+.Link:active {
   opacity: 0.8;
 }
 .Thumbnail {

@@ -13,6 +13,7 @@ export class NavbarComponent {
   openFloatMenu: boolean = false
 
   @Input() goBackLink: string
+  @Input() isProfilePage: boolean
 
   constructor(
     private authService: AuthService,
