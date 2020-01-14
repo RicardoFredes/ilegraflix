@@ -25,7 +25,7 @@ section > div:after {
   min-width: 8px;
 }
 .Item {
-  width: 120px;
+  min-width: 120px;
   padding: 0 4px;
 }
 section a {

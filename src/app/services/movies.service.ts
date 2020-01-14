@@ -25,6 +25,14 @@ export class MoviesService {
     return [userList, ...MOVIES];
   }
 
+  public getUserWatchedMovies() {
+    return  {
+      category: "Pessoal",
+      title: "Últimos Assistidos",
+      list: this.userWatchedMoviesId().map((id: number) => findById(this.moviesList, id))
+    }
+  }
+
   public getMovie(id: number) {
     return findById(this.moviesList, id)
   }
