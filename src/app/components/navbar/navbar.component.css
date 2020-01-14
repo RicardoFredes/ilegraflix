@@ -1,6 +1,6 @@
 nav {
   background-color: #333333;
-  padding: 0 12px 0 8px;
+  padding: 0 12px;
   box-sizing: border-box;
 }
 nav > div {
@@ -9,6 +9,23 @@ nav > div {
 
 #brand {
   padding-top: 4px;
+}
+.GoBack {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+  opacity: 0.5;
+  line-height: 64px;
+  transition: all ease 0.2s;
+}
+.GoBack img {
+  margin-right: 8px;
+}
+.GoBack:hover,
+.GoBack:active {
+  opacity: 0.8;
 }
 .Thumbnail {
   border-radius: 50%;

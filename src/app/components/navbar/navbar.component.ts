@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { AuthService } from '../../services/auth.service'
 import { Router } from '@angular/router'
 
@@ -12,14 +12,16 @@ export class NavbarComponent {
   logout: Function;
   openFloatMenu: boolean = false
 
+  @Input() goBackLink: string
+
   constructor(
-    private auth: AuthService,
+    private authService: AuthService,
     private router: Router
   ) {
-    this.user = auth.getUser()
-    this.logout = function() {
-      router.navigate(['/entrar'])
-      auth.logout()
+    this.user = this.authService.getUser()
+    this.logout = () => {
+      this.router.navigate(['/entrar'])
+      this.authService.logout()
     }
   }
 

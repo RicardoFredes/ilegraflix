@@ -10,12 +10,14 @@ import { CrmEventsService } from 'src/app/services/crm-events.service';
 export class PlayerComponent implements OnInit {
   id: number;
   registryMovieWatched: Function;
+  goBackLink: string
 
   constructor(
     private route: ActivatedRoute,
     private crmEvents: CrmEventsService,
   ) {
     const movieId = this.route.snapshot.paramMap.get('movie')
+    this.goBackLink = '/filme/' + movieId
     this.id = Number(movieId)
     this.registryMovieWatched = (id: number) => this.crmEvents.post('watched', id)
    }

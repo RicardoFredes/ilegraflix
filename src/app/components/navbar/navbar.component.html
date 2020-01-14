@@ -1,7 +1,11 @@
 <nav>
-  <div class="Flex JCSpaceBetween AICenter Container">
-    <a routerLink="/" id="brand">
+  <div class="Flex JCSpaceBetween AICenter">
+    <a *ngIf="!goBackLink" routerLink="/" id="brand">
       <img height="40" src="assets/logo-min.png" />
+    </a>
+    <a class="GoBack" *ngIf="goBackLink" [routerLink]="goBackLink">
+      <img height="12" src="/assets/back.svg" />
+      <span>Voltar</span>
     </a>
     <div *ngIf="user" class="Thumbnail">
       <img height="40" width="40" src="assets/{{user.thumbnail}}" (click)="openFloatMenu=!openFloatMenu" />
