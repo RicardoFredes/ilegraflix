@@ -25,8 +25,7 @@ section > div:after {
   min-width: 8px;
 }
 .Item {
-  width: calc(100% / 5);
-  min-width: 120px;
+  width: 120px;
   padding: 0 4px;
 }
 section a {
@@ -50,4 +49,10 @@ section a img {
   width: calc(100% - 8px);
   margin-bottom: 0;
   background-color: #cccccc;
+}
+
+@media (min-width: 650px) {
+  .Item {
+    width: calc(100% / 5);
+  }
 }
