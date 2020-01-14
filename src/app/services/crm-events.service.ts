@@ -5,16 +5,14 @@ import { AuthService } from './auth.service';
   providedIn: 'root'
 })
 export class CrmEventsService {
-  userEmail: string;
+  getEmail: Function;
 
   constructor(private authService: AuthService) {
-    const user = this.authService.getUser()
-    this.userEmail = user.email
+    this.getEmail = () => this.authService.getUser().email
   }
 
   public post(eventType: string, movieId: number): void {
-
-    const logKey = `${eventType}:${this.userEmail}`
+    const logKey = `${eventType}:${this.getEmail()}`
     const registered = localStorage.getItem(logKey) || ''
 
     const logs = registered
@@ -27,7 +25,7 @@ export class CrmEventsService {
   }
 
   public get(eventType: string) {
-    const logKey = `${eventType}:${this.userEmail}`
+    const logKey = `${eventType}:${this.getEmail()}`
     const registered = localStorage.getItem(logKey) || ''
     return registered.split(',').filter(id => id).slice(0,5).map(id => Number(id))
   }
