@@ -1,8 +1,9 @@
 <section>
   <a routerLink="/filme/{{movie.id}}/assistir" class="MovieVideo" [ngStyle]="{'background-image': 'url(' + movie.thumbnail + ')'}" ></a>
   <div class="MovieTexts">
+    <span class="Label">{{ movie.category }}</span>
     <h1>{{ movie.title }}</h1>
-    <p class="Details">
+    <p>
       <strong>Ano: </strong> {{ movie.year }} |
       <strong>Duração: </strong>{{ movie.duration }} |
       <strong>Nota: </strong>{{ movie.rating}}

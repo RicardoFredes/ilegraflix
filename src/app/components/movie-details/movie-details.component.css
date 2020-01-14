@@ -31,6 +31,18 @@ section {
 .MovieTexts {
   padding: 16px;
 }
+.MovieTexts .Label {
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 8px;
+  line-height: 16px;
+  padding: 0 8px;
+  color: white;
+  background-color: #aeaeae;
+  transform: translateY(-50%);
+}
 .MovieTexts h1 {
   font-size: 18px;
   font-weight: bold;
@@ -57,5 +69,8 @@ section {
   }
   .MovieTexts {
     padding: 40px calc(50vw - 320px);
+  }
+  .MovieTexts h1 {
+    font-size: 24px;
   }
 }
