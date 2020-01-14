@@ -17,8 +17,8 @@ export class HomeComponent implements OnInit {
     private moviesService: MoviesService,
     private router: Router,
   ) {
-    this.isLoggIn = auth.isLoggIn()
-    this.moviesList = moviesService.getMovies()
+    this.isLoggIn = this.auth.isLoggIn()
+    this.moviesList = this.moviesService.getMovies()
   }
 
   ngOnInit() {

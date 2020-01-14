@@ -1,0 +1,76 @@
+section {
+  max-width: 100vw;
+  overflow: hidden;
+}
+.MovieVideo {
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  width: 100%;
+  height: 50vh;
+  filter: brightness(0.5);
+  position: relative;
+}
+.MovieVideo:before {
+  content: '';
+  background: url('/assets/play.svg') no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all ease 0.2s;
+}
+.MovieVideo:hover:before {
+  transform: translate(-50%, -50%) scale(1.25);
+}
+
+.MovieTexts {
+  padding: 16px;
+}
+.MovieTexts .Label {
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 8px;
+  line-height: 16px;
+  padding: 0 8px;
+  color: white;
+  background-color: #aeaeae;
+  transform: translateY(-50%);
+}
+.MovieTexts h1 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+.MovieTexts p {
+  font-size: 13px;
+  color: #555555;
+  line-height: 1.2em;
+  margin: 8px 0;
+  padding-top: 8px;
+  border-top: 1px solid #cccccc;
+}
+.MovieTexts strong {
+  font-weight: bold;
+}
+
+@media (min-width: 650px) {
+  .MovieVideo {
+    background-size: contain;
+  }
+  .MovieVideo:before {
+    height: 96px;
+  }
+  .MovieTexts {
+    padding: 40px calc(50vw - 320px);
+  }
+  .MovieTexts h1 {
+    font-size: 32px;
+  }
+}
