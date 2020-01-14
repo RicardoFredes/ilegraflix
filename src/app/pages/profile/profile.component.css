@@ -1,0 +1,25 @@
+.Profile {
+  font-size: 13px;
+}
+.Profile .Avatar img {
+  height: 96px;
+  width: auto;
+}
+.Profile h2 {
+  font-size: 24px;
+  margin: 12px 0 8px 0;
+  font-weight: bold;
+}
+.Profile .Text {
+  color: #555555;
+}
+
+@media (min-width: 450px) {
+  .Profile {
+    padding-top: 0;
+    margin-top: -32px;
+  }
+  .Profile .Avatar img {
+    height: 120px;
+  }
+}
