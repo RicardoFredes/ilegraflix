@@ -53,6 +53,6 @@ section a img {
 
 @media (min-width: 650px) {
   .Item {
-    width: calc(100% / 5);
+    width: calc(100% / 5 - 8px);
   }
 }
