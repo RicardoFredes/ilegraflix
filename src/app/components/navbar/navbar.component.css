@@ -19,6 +19,7 @@ nav > div {
   opacity: 0.5;
   line-height: 64px;
   transition: all ease 0.2s;
+  cursor: pointer;
 }
 .Link img {
   margin-right: 8px;

@@ -1,10 +1,10 @@
 <app-navbar isProfilePage="true"></app-navbar>
 <section class="Section TextCenter Profile">
   <div class="Avatar">
-    <img src="/assets/figura_01.png" height="120" />
+    <img src="/assets/{{ user.thumbnail }}" height="120" />
   </div>
-  <h2>Ricardo Fredes</h2>
-  <div class="Text">ricardofredes@gmail.com</div>
+  <h2>{{ user.name }}</h2>
+  <div class="Text">{{ user.email }}</div>
 </section>
 <section>
   <app-movie-list [movies]="movies"></app-movie-list>

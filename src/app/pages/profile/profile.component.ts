@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MoviesService } from 'src/app/services/movies.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-profile',
@@ -8,9 +9,14 @@ import { MoviesService } from 'src/app/services/movies.service';
 })
 export class ProfileComponent implements OnInit {
   movies;
+  user;
 
-  constructor(private moviesService: MoviesService) {
+  constructor(
+    private authService: AuthService,
+    private moviesService: MoviesService,
+  ) {
     this.movies = this.moviesService.getUserWatchedMovies()
+    this.user = this.authService.getUser()
   }
 
   ngOnInit() {
