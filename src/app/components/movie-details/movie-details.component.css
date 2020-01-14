@@ -44,7 +44,7 @@ section {
   transform: translateY(-50%);
 }
 .MovieTexts h1 {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   line-height: 1.2em;
 }
@@ -71,6 +71,6 @@ section {
     padding: 40px calc(50vw - 320px);
   }
   .MovieTexts h1 {
-    font-size: 24px;
+    font-size: 32px;
   }
 }
