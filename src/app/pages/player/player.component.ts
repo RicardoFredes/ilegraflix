@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { CrmEventsService } from 'src/app/services/crm-events.service';
 
 @Component({
   selector: 'app-player',
@@ -6,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./player.component.css']
 })
 export class PlayerComponent implements OnInit {
+  id: number;
+  registryMovieWatched: Function;
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private crmEvents: CrmEventsService,
+  ) {
+    const movieId = this.route.snapshot.paramMap.get('movie')
+    this.id = Number(movieId)
+    this.registryMovieWatched = (id: number) => this.crmEvents.post('watched', id)
+   }
 
   ngOnInit() {
+    this.registryMovieWatched(this.id)
   }
 
 }

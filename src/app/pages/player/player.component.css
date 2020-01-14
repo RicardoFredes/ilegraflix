@@ -1,0 +1,11 @@
+section {
+  background-color: black;
+  text-align: center;
+}
+video {
+  width: 100%;
+  height: calc(100vh - 66px);
+}
+video:focus {
+  outline: none;
+}
