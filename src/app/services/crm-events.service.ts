@@ -8,7 +8,10 @@ export class CrmEventsService {
   getEmail: () => string;
 
   constructor(private authService: AuthService) {
-    this.getEmail = () => this.authService.getUser().email;
+    this.getEmail = () => {
+      const user = this.authService.getUser() || {};
+      return user.email;
+    };
   }
 
   public post(eventType: string, movieId: number): void {
