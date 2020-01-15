@@ -6,6 +6,29 @@ This project is a kind of mini netflix. The image below shows a basic structure 
 
 <img src="https://raw.githubusercontent.com/RicardoFredes/ilegraflix/master/src/assets/mock.png" />
 
+## How to use
+
+You can use the user list below to sign in to this app:
+
+| id | email                     | password |
+|----|---------------------------|----------|
+| 1  | alex@ilegraflix.com       |  123456  |
+| 2  | eduardo@ilegraflix.com    |  123456  |
+| 3  | jessica@ilegraflix.com    |  123456  |
+| 4  | lauren@ilegraflix.com     |  123456  |
+| 5  | julia@ilegraflix.com      |  123456  |
+| 6  | ricardo@ilegraflix.com    |  123456  |
+
+
+## What can you do?
+
+- Visit the movies page and see your last five watched movies
+- Watch movies and view information about a movie
+- Add comments on movies and read user comments
+- Visit your profile
+
+___________________________
+
 ### Global Dependencies
 
 - Node JS
@@ -31,27 +54,6 @@ yarn install
 ```
 
 Now run `yarn start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## How to use
-
-You can use the user list below to sign in to this app:
-
-| id | email                     | password |
-|----|---------------------------|----------|
-| 1  | alex@ilegraflix.com       |  123456  |
-| 2  | eduardo@ilegraflix.com    |  123456  |
-| 3  | jessica@ilegraflix.com    |  123456  |
-| 4  | lauren@ilegraflix.com     |  123456  |
-| 5  | julia@ilegraflix.com      |  123456  |
-| 6  | ricardo@ilegraflix.com    |  123456  |
-
-
-## What can you do?
-
-- Visit the movies page and see your last five watched movies
-- Watch movies and view information about a movie
-- Add comments on movies and read user comments
-- Visit your profile
 
 
 ## Build to production
