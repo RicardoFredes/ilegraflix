@@ -4,11 +4,11 @@
     <div class="Avatar">
       <img src="/assets/{{ user.thumbnail }}" height="40" />
     </div>
-    <form (ngSubmit)="onSubmit()" #commentForm="ngForm">
-      <input [(ngModel)]="text" class="Input" type="text" name="text" placeholder="Escrever comentário" />
+    <form (ngSubmit)="onSubmit()">
+      <input [(ngModel)]="text" class="Input" type="text" name="text" placeholder="Escrever comentário" autocomplete="off" />
       <div class="TextRight">
         <button type="reset" class="Button ButtonWhite ButtonSmall">Cancelar</button>
-        <button type="submit" class="Button ButtonSecondary ButtonSmall ML8">Enviar</button>
+        <button type="submit" [disabled]="isDisable()" class="Button ButtonSmall ML8">Enviar</button>
       </div>
     </form>
   </div>

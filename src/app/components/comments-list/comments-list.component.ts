@@ -36,7 +36,11 @@ export class CommentsListComponent implements OnInit {
     return `${number} comentário${number > 1 ? 's' : ''}`
   }
 
-  onSubmit() {
+  public isDisable(): boolean {
+    return !this.text || this.text.length < 5
+  }
+
+  public onSubmit() {
     const movieId = this.movieId
     const comment: Comment = {
       movieId,
