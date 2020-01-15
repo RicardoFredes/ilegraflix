@@ -29,19 +29,22 @@ You can use the user list below to sign in to this app:
 
 ___________________________
 
+
+## Getting Started
+
 ### Global Dependencies
 
 - Node JS
 - NPM or Yarn
 
+
 ### Main Dependencies
 
 - [Angular](https://angular.io) version 8.3.22
 
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
 
-## Getting Started
+
 
 Clone this repository and run the sequence:
 
