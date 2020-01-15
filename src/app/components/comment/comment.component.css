@@ -1,0 +1,21 @@
+.Comment {
+  display: flex;
+  padding: 16px 0;
+  max-width: 450px;
+}
+img {
+  height: 40px;
+  width: 40px;
+  margin-right: 16px;
+}
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 4px;
+}
+p {
+  line-height: 1.2em;
+  font-size: 13px;
+  color: #777777;
+}

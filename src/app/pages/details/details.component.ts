@@ -10,14 +10,15 @@ import { Movie } from 'src/app/models/movie.model';
 })
 export class DetailsComponent implements OnInit {
   movie: Movie;
+  movieId: number;
 
   constructor(
     private moviesService: MoviesService,
     private route: ActivatedRoute,
   ) {
     const movieId = this.route.snapshot.paramMap.get('movie')
-    const id = Number(movieId)
-    this.movie = this.moviesService.getMovie(id)
+    this.movieId = Number(movieId)
+    this.movie = this.moviesService.getMovie(this.movieId)
    }
 
   ngOnInit() {
