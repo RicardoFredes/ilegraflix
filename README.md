@@ -30,6 +30,26 @@ yarn install
 
 Now run `yarn start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+# How to use
+
+You can use the user list above to login in this app:
+
+| id | email                     | password |
+|----|---------------------------|----------|
+| 1  | alex@ilegraflix.com       |  123456  |
+| 2  | eduardo@ilegraflix.com    |  123456  |
+| 3  | jessica@ilegraflix.com    |  123456  |
+| 4  | lauren@ilegraflix.com     |  123456  |
+| 5  | julia@ilegraflix.com      |  123456  |
+| 6  | ricardo@ilegraflix.com    |  123456  |
+
+
+## What do you it?
+
+- Watch movies and know more information about this movie
+- Add comments in movies and read others user comments
+- Visit your profile
+
 
 # Build to production
 
