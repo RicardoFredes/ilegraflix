@@ -3,7 +3,7 @@
     <a *ngIf="!goBackLink" routerLink="/" id="brand">
       <img height="40" src="assets/logo-min.png" />
     </a>
-    <a class="Link" *ngIf="goBackLink" [routerLink]="goBackLink">
+    <a id="voltar" class="Link" *ngIf="goBackLink" [routerLink]="goBackLink">
       <img height="12" src="/assets/back.svg" />
       <span>Voltar</span>
     </a>
