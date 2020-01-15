@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'perfil', component: ProfileComponent },
   { path: 'filme/:movie', component: DetailsComponent },
   { path: 'filme/:movie/assistir', component: PlayerComponent }
-]
+];
 
 @NgModule({
   declarations: [],

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router'
-import { AuthService } from '../../services/auth.service'
-import { MoviesService } from '../../services/movies.service'
+import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
+import { MoviesService } from '../../services/movies.service';
 
 @Component({
   selector: 'app-home',
@@ -17,13 +17,13 @@ export class HomeComponent implements OnInit {
     private moviesService: MoviesService,
     private router: Router,
   ) {
-    this.isLoggIn = this.auth.isLoggIn()
-    this.moviesList = this.moviesService.getMovies()
+    this.isLoggIn = this.auth.isLoggIn();
+    this.moviesList = this.moviesService.getMovies();
   }
 
   ngOnInit() {
     if (!this.isLoggIn) {
-      this.router.navigate(['/entrar'])
+      this.router.navigate(['/entrar']);
     }
   }
 

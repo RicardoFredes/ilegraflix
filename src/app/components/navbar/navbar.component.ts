@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { AuthService } from '../../services/auth.service'
-import { Router } from '@angular/router'
+import { AuthService } from '../../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,21 +9,21 @@ import { Router } from '@angular/router'
 })
 export class NavbarComponent {
   user: any;
-  logout: Function;
-  openFloatMenu: boolean = false
+  logout: () => void;
+  openFloatMenu = false;
 
-  @Input() goBackLink: string
-  @Input() isProfilePage: boolean
+  @Input() goBackLink: string;
+  @Input() isProfilePage: boolean;
 
   constructor(
     private authService: AuthService,
     private router: Router
   ) {
-    this.user = this.authService.getUser()
+    this.user = this.authService.getUser();
     this.logout = () => {
-      this.router.navigate(['/entrar'])
-      this.authService.logout()
-    }
+      this.router.navigate(['/entrar']);
+      this.authService.logout();
+    };
   }
 
 }

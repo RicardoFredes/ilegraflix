@@ -15,8 +15,8 @@ export class ProfileComponent implements OnInit {
     private authService: AuthService,
     private moviesService: MoviesService,
   ) {
-    this.movies = this.moviesService.getUserWatchedMovies()
-    this.user = this.authService.getUser()
+    this.movies = this.moviesService.getUserWatchedMovies();
+    this.user = this.authService.getUser();
   }
 
   ngOnInit() {
