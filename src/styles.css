@@ -63,6 +63,9 @@ body {
 .TextCenter {
   text-align: center;
 }
+.TextRight {
+  text-align: right;
+}
 
 /*
 ** Forms
@@ -99,7 +102,8 @@ body {
   background-color: #DB202C;
   font-size: 16px;
   font-weight: bold;
-  padding: 12px 24px;
+  padding: 0 24px;
+  vertical-align: middle;
   text-align: center;
   min-width: 120px;
   height: 40px;
@@ -116,6 +120,22 @@ body {
 .Button.ButtonFull {
   width: 100%;
   display: block;
+}
+.Button.ButtonSmall {
+  font-size: 14px;
+  min-width: 96px;
+  height: 32px;
+}
+.Button.ButtonSecondary {
+  background-color: #cccccc;
+}
+.Button.ButtonSecondary:hover,
+.Button.ButtonSecondary:active {
+  background-color: #aeaeae;
+}
+.Button.ButtonWhite {
+  background-color: white;
+  color: #aeaeae;
 }
 
 /*
@@ -138,6 +158,9 @@ body {
   width: 940px;
   max-width: 100%;
   margin: auto;
+}
+.WidthFull {
+  width: 100%;
 }
 
 /*

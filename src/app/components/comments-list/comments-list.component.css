@@ -1,0 +1,36 @@
+section {
+  background-color: white;
+  padding: 16px;
+}
+section h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.CommentForm {
+  padding-bottom: 16px;
+}
+.Avatar {
+  min-width: 56px;
+  padding-top: 12px;
+}
+form {
+  flex-grow: 1;
+}
+.Input {
+  margin-top: 0;
+  padding: 12px 0;
+  border-bottom-color: #cccccc;
+}
+.Input:focus {
+  border-bottom-color: #DB202C;
+}
+.ML8 {
+  margin-left: 8px;
+}
+
+@media (min-width: 650px) {
+  section {
+    padding: 40px calc(50vw - 320px);
+  }
+}
