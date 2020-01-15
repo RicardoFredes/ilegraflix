@@ -1,5 +1,7 @@
 # <img alt="IlegraFlix" src="https://raw.githubusercontent.com/RicardoFredes/ilegraflix/master/src/assets/logo-min.png" />
 
+[Visit app](https://ilegra-flix.fredes.now.sh/)
+
 This project is a kind of mini netflix. The image below shows a basic structure that is designed for mobile devices:
 
 <img src="https://raw.githubusercontent.com/RicardoFredes/ilegraflix/master/src/assets/mock.png" />
@@ -16,7 +18,7 @@ This project is a kind of mini netflix. The image below shows a basic structure 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
 
-# Getting Started
+## Getting Started
 
 Clone this repository and run the sequence:
 
@@ -30,7 +32,7 @@ yarn install
 
 Now run `yarn start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-# How to use
+## How to use
 
 You can use the user list below to sign in to this app:
 
@@ -52,11 +54,10 @@ You can use the user list below to sign in to this app:
 - Visit your profile
 
 
-# Build to production
+## Build to production
 
 Run `yarn build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-# Running Tests
 
 ## Running unit tests
 
