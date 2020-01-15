@@ -1,4 +1,14 @@
+<img src="https://raw.githubusercontent.com/RicardoFredes/ilegraflix/master/src/assets/logo-min.png" />
+
 # IlegraFlix
+
+This project is a kind of the mini netflix. The image below to show a basic structure:
+
+
+### Main Dependencies
+
+- [Angular](https://angular.io) version 8.3.22
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
 
