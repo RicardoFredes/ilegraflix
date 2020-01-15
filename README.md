@@ -1,6 +1,6 @@
 # <img alt="IlegraFlix" src="https://raw.githubusercontent.com/RicardoFredes/ilegraflix/master/src/assets/logo-min.png" />
 
-This project is a kind of the mini netflix. The image below to show a basic structure in mobile first idea:
+This project is a kind of mini netflix. The image below shows a basic structure that is designed for mobile devices:
 
 <img src="https://raw.githubusercontent.com/RicardoFredes/ilegraflix/master/src/assets/mock.png" />
 
@@ -18,7 +18,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Getting Started
 
-Clone this repository and run the sequencie:
+Clone this repository and run the sequence:
 
 ```bash
 git clone https://github.com/RicardoFredes/ilegraflix.git
@@ -32,7 +32,7 @@ Now run `yarn start` for a dev server. Navigate to `http://localhost:4200/`. The
 
 # How to use
 
-You can use the user list above to login in this app:
+You can use the user list below to sign in to this app:
 
 | id | email                     | password |
 |----|---------------------------|----------|
@@ -44,10 +44,11 @@ You can use the user list above to login in this app:
 | 6  | ricardo@ilegraflix.com    |  123456  |
 
 
-## What do you it?
+## What can you do?
 
-- Watch movies and know more information about this movie
-- Add comments in movies and read others user comments
+- Visit the movies page and see your last five watched movies
+- Watch movies and view information about a movie
+- Add comments on movies and read user comments
 - Visit your profile
 
 
