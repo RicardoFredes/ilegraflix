@@ -20,7 +20,7 @@ export class PlayerComponent implements OnInit {
     this.goBackLink = '/filme/' + movieId;
     this.id = Number(movieId);
     this.registryMovieWatched = (id: number) => this.crmEvents.post('watched', id);
-   }
+  }
 
   ngOnInit() {
     this.registryMovieWatched(this.id);

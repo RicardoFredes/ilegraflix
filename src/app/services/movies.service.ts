@@ -18,7 +18,7 @@ export class MoviesService {
 
   public getMovies() {
     const list = this.userWatchedMoviesId().map((id: number) => findById(this.moviesList, id));
-    if (list.length === 0) return MOVIES;
+    if (list.length === 0) { return MOVIES; }
     const userList = {
       category: 'Pessoal',
       title: 'Últimos Assistidos',

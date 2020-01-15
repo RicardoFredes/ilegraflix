@@ -2,7 +2,7 @@
   <h3>{{ title }}</h3>
   <div class="CommentForm Flex">
     <div class="Avatar">
-      <img src="/assets/{{ user.thumbnail }}" height="40" />
+      <img *ngIf="user" src="/assets/{{ user.thumbnail }}" height="40" />
     </div>
     <form (ngSubmit)="onSubmit()">
       <input [(ngModel)]="text" class="Input" type="text" name="text" placeholder="Escrever comentário" autocomplete="off" />

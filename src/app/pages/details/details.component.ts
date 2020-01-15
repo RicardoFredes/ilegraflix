@@ -19,10 +19,10 @@ export class DetailsComponent implements OnInit {
     const movieId = this.route.snapshot.paramMap.get('movie');
     this.movieId = Number(movieId);
     this.movie = this.moviesService.getMovie(this.movieId);
-   }
+  }
 
   ngOnInit() {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }
 
 }

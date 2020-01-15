@@ -13,7 +13,6 @@ import { PlayerComponent } from './pages/player/player.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
 import { CommentsListComponent } from './components/comments-list/comments-list.component';
-import { RankingListComponent } from './components/ranking-list/ranking-list.component';
 import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
 import { CommentComponent } from './components/comment/comment.component';
 
@@ -29,7 +28,6 @@ import { CommentComponent } from './components/comment/comment.component';
     NavbarComponent,
     MovieListComponent,
     CommentsListComponent,
-    RankingListComponent,
     MovieDetailsComponent,
     CommentComponent
   ],

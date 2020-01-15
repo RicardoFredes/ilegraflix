@@ -1,11 +1,18 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router';
 
 describe('AppComponent', () => {
+  const routes = [];
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent
+      ],
+      imports: [
+        RouterModule,
+        RouterModule.forRoot(routes)
       ],
     }).compileComponents();
   }));
@@ -16,16 +23,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ilegra-flix'`, () => {
+  it(`should have as title 'Ilegra Flix'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('ilegra-flix');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('ilegra-flix app is running!');
+    expect(app.title).toEqual('Ilegra Flix');
   });
 });
