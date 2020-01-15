@@ -1,16 +1,26 @@
 import { AppPage } from './app.po';
-import { browser, logging } from 'protractor';
+import { browser, logging, element, by } from 'protractor';
 
-describe('workspace-project App', () => {
+describe('App', () => {
   let page: AppPage;
 
   beforeEach(() => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getTitleText()).toEqual('ilegra-flix app is running!');
+  describe('User not signin', () => {
+    it('should redirect to /entrar', () => {
+      page.navigateTo();
+      expect(browser.getCurrentUrl()).toBe(browser.baseUrl + 'entrar');
+    });
+  });
+
+  describe('Sign in', () => {
+    it('When password or email is invalid', () => {
+      element(by.css('form input[type=email]')).sendKeys('ricardo@ilegraflix.com');
+      element(by.css('form input[type=password]')).sendKeys('invalid_password');
+      element(by.css('form')).submit()
+    })
   });
 
   afterEach(async () => {

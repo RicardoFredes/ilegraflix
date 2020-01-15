@@ -1,8 +1,8 @@
-<section>
+<section *ngIf="movies">
   <h2>{{movies.title}}</h2>
   <div class="Flex">
     <div class="Item" *ngFor="let movie of movies.list">
-      <a routerLink="/filme/{{movie.id}}" style="background-image: url({{movie.thumbnail}});" title={{movie.title}}>
+      <a *ngIf="movie" routerLink="/filme/{{movie.id}}" style="background-image: url({{movie.thumbnail}});" title={{movie.title}}>
         <img width="120" src="{{movie.thumbnail}}" />
       </a>
     </div>
