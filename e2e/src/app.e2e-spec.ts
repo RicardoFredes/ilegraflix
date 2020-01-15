@@ -37,8 +37,8 @@ describe('App', () => {
     });
     it('When click on movie image should redirect to movie page', async () => {
       const movie = $('.MovieList a');
-      const link = await movie.getAttribute('href')
-      movie.click()
+      const link = await movie.getAttribute('href');
+      movie.click();
       expect(browser.getCurrentUrl()).toBe(link);
     });
   });
@@ -46,13 +46,13 @@ describe('App', () => {
   describe('Movie page', () => {
     it ('When click on movie image, should redirect to player page', async () => {
       const movie = $('a.MovieVideo');
-      const link = await movie.getAttribute('href')
+      const link = await movie.getAttribute('href');
       movie.click();
       expect(browser.getCurrentUrl()).toBe(link);
     });
     it('When click in navbar "voltar", should navigate to movie page', async () => {
       const goBackLink = $('#voltar');
-      const link = await goBackLink.getAttribute('href')
+      const link = await goBackLink.getAttribute('href');
       goBackLink.click();
       expect(browser.getCurrentUrl()).toBe(link);
     });

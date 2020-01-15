@@ -3,7 +3,7 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 
 describe('AppComponent', () => {
-  const routes = []
+  const routes = [];
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
