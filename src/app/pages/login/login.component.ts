@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router'
-import { AuthService } from '../../services/auth.service'
+import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +14,7 @@ export class LoginComponent {
   };
 
   login: any;
-  loginHasError: boolean = false;
+  loginHasError = false;
 
   constructor(private auth: AuthService, private router: Router) {
     this.login = this.auth.login;

@@ -13,44 +13,44 @@ export class CommentsListComponent implements OnInit {
   user: User;
   text: string;
   comments: Comment[] = [];
-  getComments: Function;
-  saveComment: Function;
+  getComments;
+  saveComment;
   @Input() movieId: number;
 
   constructor(
     private authService: AuthService,
     private commentsService: CommentsService,
   ) {
-    this.getComments = this.commentsService.getCommentsByMovieId
-    this.saveComment = this.commentsService.saveComment
+    this.getComments = this.commentsService.getCommentsByMovieId;
+    this.saveComment = this.commentsService.saveComment;
   }
 
   ngOnInit() {
-    this.user = this.authService.getUser()
-    this.comments = this.getComments(this.movieId)
+    this.user = this.authService.getUser();
+    this.comments = this.getComments(this.movieId);
   }
 
   public get title(): string {
-    const number = this.comments.length
-    if (number === 0 ) return 'Seja o primeiro a comentar'
-    return `${number} comentário${number > 1 ? 's' : ''}`
+    const quantify = this.comments.length;
+    if (quantify === 0 ) { return 'Seja o primeiro a comentar'; }
+    return `${quantify} comentário${quantify > 1 ? 's' : ''}`;
   }
 
   public isDisable(): boolean {
-    return !this.text || this.text.length < 5
+    return !this.text || this.text.length < 5;
   }
 
   public onSubmit() {
-    const movieId = this.movieId
+    const movieId = this.movieId;
     const comment: Comment = {
       movieId,
       name: this.user.name,
       thumbnail: this.user.thumbnail,
       text: this.text,
-    }
-    this.text = ''
-    this.saveComment(movieId, comment)
-    this.comments = this.getComments(this.movieId)
+    };
+    this.text = '';
+    this.saveComment(movieId, comment);
+    this.comments = this.getComments(this.movieId);
   }
 
 }

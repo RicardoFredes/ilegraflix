@@ -10,21 +10,21 @@ export class CommentsService {
   }
 
   public getCommentsByMovieId(movieId: number) {
-    return getComments(movieId)
+    return getComments(movieId);
   }
 
   public saveComment(movieId: number | string, comment: Comment) {
-    const comments = [comment, ...getComments(movieId)]
-    localStorage.setItem(getKey(movieId), JSON.stringify(comments))
+    const comments = [comment, ...getComments(movieId)];
+    localStorage.setItem(getKey(movieId), JSON.stringify(comments));
   }
 
 }
 
 function getComments(id: number | string) {
-  return JSON.parse(localStorage.getItem(getKey(id)) || '[]')
+  return JSON.parse(localStorage.getItem(getKey(id)) || '[]');
 }
 
-function getKey(id :number | string) {
-  return `movie-${id}`
+function getKey(id: number | string) {
+  return `movie-${id}`;
 }
 
