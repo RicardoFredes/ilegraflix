@@ -6,7 +6,7 @@ This project is a kind of mini netflix. The image below shows a basic structure 
 
 <img src="https://raw.githubusercontent.com/RicardoFredes/ilegraflix/master/src/assets/mock.png" />
 
-## How to use
+### How to use
 
 You can use the user list below to sign in to this app:
 
@@ -20,7 +20,7 @@ You can use the user list below to sign in to this app:
 | 6  | ricardo@ilegraflix.com    |  123456  |
 
 
-## What can you do?
+### What can you do?
 
 - Visit the movies page and see your last five watched movies
 - Watch movies and view information about a movie
@@ -28,9 +28,6 @@ You can use the user list below to sign in to this app:
 - Visit your profile
 
 ___________________________
-
-
-## Getting Started
 
 ### Global Dependencies
 
@@ -45,6 +42,7 @@ ___________________________
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
 
 
+## Getting Started
 
 Clone this repository and run the sequence:
 
