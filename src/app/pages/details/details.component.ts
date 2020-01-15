@@ -22,6 +22,7 @@ export class DetailsComponent implements OnInit {
    }
 
   ngOnInit() {
+    window.scrollTo(0,0);
   }
 
 }
